@@ -1,0 +1,115 @@
+/* General */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+}
+
+.header {
+  background: #023e8a;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+}
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+.header p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  height: calc(100vh - 70px);
+}
+#map {
+  flex: 2;
+  height: 100%;
+}
+.sidebar {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-left: 2px solid #e2e8f0;
+  overflow-y: auto;
+}
+
+/* Cards */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+.card h2 {
+  font-size: 16px;
+  margin: 0 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0077b6;
+}
+
+/* User card */
+.user-card {
+  background: linear-gradient(135deg, #0096c7, #0077b6);
+  color: white;
+}
+.user-card h2 {
+  color: white;
+}
+.stat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/* Buttons */
+button {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #00b4d8;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+button:hover {
+  background: #0096c7;
+}
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Info */
+.info {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Badges */
+.badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.badge {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #e0f7fa;
+  color: #0077b6;
+  font-size: 12px;
+  font-weight: 600;
+}

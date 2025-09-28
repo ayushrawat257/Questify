@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tourism Quest</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Remix Icons for sidebar icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1><i class="ri-earth-fill"></i> Tourism Quest</h1>
+    <p>Gamified Tourism Prototype</p>
+  </header>
+
+  <main class="container">
+    <section id="map"></section>
+
+    <aside class="sidebar">
+      <div class="card user-card">
+        <h2><i class="ri-user-fill"></i> Demo User</h2>
+        <div class="stat">
+          <span>⭐ Points:</span> <span id="points">0</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2><i class="ri-map-pin-2-fill"></i> Selected Place</h2>
+        <div id="placeInfo" class="info">Click on a marker to explore.</div>
+        <button id="checkInBtn" disabled>✅ Simulate Check-in</button>
+      </div>
+
+      <div class="card">
+        <h2><i class="ri-medal-fill"></i> Badges</h2>
+        <div id="badges" class="badges">No badges yet.</div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
